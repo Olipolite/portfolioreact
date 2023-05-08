@@ -1,15 +1,17 @@
 import React from 'react';
-import Home from './Home'
+import Home from './Home';
+import Navbar from './Navbar';
 
-const App = () => {
+function App() {
   return (
-    <div>
-    <h1 className='text-3xl flex justify-center font-bold underline'>
-      Hello Portfolio
-    </h1>
-    <Home />
+    <div className="flex-row">
+      <Navbar />
+      <h1 className="text-3xl flex justify-center font-bold underline">
+        Hello Portfolio
+      </h1>
+      <Home />
     </div>
   );
-};
+}
 
-export default App; 
+export default App;
