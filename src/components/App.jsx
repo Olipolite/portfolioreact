@@ -4,11 +4,8 @@ import Navbar from './Navbar';
 
 function App() {
   return (
-    <div className="flex-row">
+    <div className="flex">
       <Navbar />
-      <h1 className="text-3xl flex justify-center font-bold underline">
-        Hello Portfolio
-      </h1>
       <Home />
     </div>
   );
