@@ -10,3 +10,12 @@ body {
   margin: 0;
   background-color: #3e4949;
 }
+
+html {
+  font-size: calc(60% + 0.8vmin);
+}
+
+main {
+  max-width: 40rem;
+  margin: 0 auto;
+}
