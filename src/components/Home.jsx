@@ -16,7 +16,7 @@ function Home() {
           Excepteur sint occaecat cupidatat non proident,
           sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
-        <img src={Oliver} className="w-60 h-52 mr-40" alt="Pic of me" />
+        <img src={Oliver} className="w-60 h-52 mt-10 mr-40" alt="Pic of me" />
       </div>
     </div>
   );

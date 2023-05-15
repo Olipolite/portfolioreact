@@ -1,4 +1,5 @@
 import React from 'react';
+import { BsGithub } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 
 function Navbar() {
@@ -15,8 +16,15 @@ function Navbar() {
         <li className="px-4">
           <Link to="/contact">Contact</Link>
         </li>
-        <li className="px-4">
-          <Link to="/contact">GitHub</Link>
+        <li className="pl-4">
+          <Link to="https://github.com/Olipolite">
+            <span>GitHub</span>
+          </Link>
+        </li>
+        <li className="pl-1 mt-1">
+          <Link to="https://github.com/Olipolite">
+            <BsGithub />
+          </Link>
         </li>
       </ul>
     </div>
