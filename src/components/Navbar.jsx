@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
-    <div className="bg-black text-white flex justify-between items-center gap-2 px-20">
+    <div className="bg-black text-white flex justify-between items-center gap-2 px-96">
       <Link to="/" className="text-3xl py-7">奥</Link>
       <ul className="flex p-0 m-0 list-none text-[22px]">
         <li className="px-4">
