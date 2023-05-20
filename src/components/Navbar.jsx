@@ -1,32 +1,57 @@
-import React from 'react';
-import { BsGithub } from 'react-icons/bs';
+import React, { useState } from 'react';
+// import { BsGithub } from 'react-icons/bs';
+import { FaHamburger, FaTimes } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 function Navbar() {
+  const routes = [
+    {
+      path: '/',
+      title: 'Home',
+    }, {
+      path: '/about',
+      title: 'About',
+    }, {
+      path: '/project',
+      title: 'Project',
+    }, {
+      path: '/contact',
+      title: 'Contact',
+    },
+  ];
+
+  const [open, setOpen] = useState(false);
+
+  const handleMenu = () => {
+    setOpen((prev) => !prev);
+    console.log(open);
+  };
+
   return (
-    <div className="bg-black text-white flex justify-between items-center gap-2 px-96">
-      <Link to="/" className="text-3xl py-7">奥</Link>
-      <ul className="flex p-0 m-0 list-none text-[22px]">
-        <li className="px-4">
-          <Link to="/about" className="hover:bg-orange-200">About</Link>
-        </li>
-        <li className="px-4">
-          <Link to="/project">Project</Link>
-        </li>
-        <li className="px-4">
-          <Link to="/contact">Contact</Link>
-        </li>
-        <li className="pl-4">
-          <Link to="https://github.com/Olipolite">
-            <span>GitHub</span>
-          </Link>
-        </li>
-        <li className="pl-1 mt-1">
-          <Link to="https://github.com/Olipolite">
-            <BsGithub />
-          </Link>
-        </li>
-      </ul>
+    <div className="bg-black text-white max-w-full flex justify-between items-center">
+      <div className="md:flex justify-between items">
+        {routes.map((path) => (
+          <Link to={path.path}>{path.title}</Link>
+        ))}
+      </div>
+      {/* hamburger button */}
+      <div className="flex mr-2 flex md:hidden">
+        <button
+          type="button"
+          onClick={handleMenu}
+          className="inline-flex items-center justify-center p-2 rounded-md
+         text-gray-400"
+        >
+          <span className="sr-only">Open Main Menu</span>
+          { open === true ? <FaTimes /> : <FaHamburger /> }
+        </button>
+      </div>
+      {/* mobile-menu */}
+      {/* {open ? (
+        <div className="md:hide">
+
+          <div/>
+      ) : null} */}
     </div>
   );
 }

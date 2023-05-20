@@ -5,6 +5,9 @@ module.exports = {
   content: ['./src/**/*{html,js,jsx}'],
   mode: 'jit',
   theme: {
+    screeens: {
+      sm: '640px',
+    },
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
