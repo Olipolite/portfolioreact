@@ -47,11 +47,15 @@ function Navbar() {
         </button>
       </div>
       {/* mobile-menu */}
-      {/* {open ? (
-        <div className="md:hide">
-
-          <div/>
-      ) : null} */}
+      {open ? (
+        <div className="md:hidden">
+          <div className="ox-2 pt-2 pb-3 space-y-1 sm:px-3">
+            {routes.map((path) => (
+              <Link className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" to={path.path}>{path.title}</Link>
+            ))}
+          </div>
+        </div>
+      ) : null}
     </div>
   );
 }
