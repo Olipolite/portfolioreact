@@ -3,12 +3,9 @@ import Oliver from '../nocactus.png';
 
 function Home() {
   return (
-    <div className="border mx-auto max-w-xl">
-      <h1 className="flex flex-wrap justify-center pb-4 text-6xl font-extrabold leading-none tracking-tight
-       text-gray-900 dark:text-white"
-      >
+    <div>
+      <h1>
         Hi, Im Oliver!
-
       </h1>
       <div className="">
         <p className="text-left text-2xl leading-9">
