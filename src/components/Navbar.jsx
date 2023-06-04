@@ -26,6 +26,10 @@ function Navbar() {
     setOpen((prev) => !prev);
   };
 
+  const closeMenu = () => {
+    setOpen(false);
+  };
+
   return (
     <div className="bg-black text-white">
       <div className="mx-auto px-4 sm:px-6 lg:px-8">
@@ -46,8 +50,7 @@ function Navbar() {
             <button
               type="button"
               onClick={handleMenu}
-              className="inline-flex items-center justify-center p-2 rounded-md
-           text-gray-400"
+              className="flex items-center justify-center p-2 rounded-md"
             >
               <span className="sr-only">Open Main Menu</span>
               {open ? (
@@ -59,10 +62,10 @@ function Navbar() {
           </div>
           {/* mobile-menu */}
           {open ? (
-            <div className="md:hidden fixed inset-0 flex items-center justify-center">
-              <div className="bg-black w-full h-full">
+            <div className="md:hidden fixed inset-0 flex items-center z-10 bg-black bg-opacity-50">
+              <div className>
                 {routes.map((path) => (
-                  <Link className="text-gray-300 flex px-3 py-2 rounded-md text-base font-medium" to={path.path}>{path.title}</Link>
+                  <Link onClick={closeMenu} className="text-gray-300 flex px-3 py-2 rounded-md text-base font-medium z-10" to={path.path}>{path.title}</Link>
                 ))}
               </div>
             </div>
