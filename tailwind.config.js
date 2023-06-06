@@ -3,8 +3,14 @@ const colors = require('tailwindcss/colors');
 
 module.exports = {
   content: ['./src/**/*{html,js,jsx}'],
+  purge: [
+    './src/**/*{js,jsx}',
+  ],
   mode: 'jit',
   theme: {
+    screeens: {
+      sm: '640px',
+    },
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
