@@ -3,19 +3,17 @@ import Oliver from '../nocactus.png';
 
 function Home() {
   return (
-    <div>
-      <h1>
-        Hi, Im Oliver!
-      </h1>
-      <div className="">
-        <p className="text-left text-2xl leading-9">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </p>
-        <img src={Oliver} className="max-w-full" alt="Pic of me" />
+    <div className="container flex-col justify-center items-center mx-auto grid grid-cols-6 px-4 sm:px-6 lg:px-8">
+      <div className="md:col-span-1" />
+      <div className="col-span-4 md:flex items-center">
+        <div>
+          <p className="text-left text-xl leading-9">
+            Im a software developer who loves creating stuff and solve things
+          </p>
+        </div>
+        <img src={Oliver} className="max-w-xs h-auto ml-4" alt="Pic of me" />
       </div>
+      <div className="md:col-span-1" />
     </div>
   );
 }
