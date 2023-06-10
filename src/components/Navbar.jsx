@@ -61,7 +61,7 @@ function Navbar() {
           </div>
           {/* mobile-menu */}
           {open ? (
-            <div className="md:hidden fixed inset-0 flex items-center bg-black bg-opacity-50">
+            <div className="md:hidden fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
               <div className>
                 {routes.map((path) => (
                   <Link onClick={closeMenu} className="text-gray-300 flex px-3 py-2 rounded-md text-base font-medium" key={path.path} to={path.path}>{path.title}</Link>
