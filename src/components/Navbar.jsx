@@ -32,10 +32,10 @@ function Navbar() {
 
   return (
     <div className="bg-black text-white">
-      <div className=" container mx-auto grid grid-cols-6 px-4 sm:px-6 lg:px-8">
-        <div className="lg:col-span-1" />
-        <div className="flex items-center justify-between h-16 col-span-4">
-          <Link className="flex  text-white text-sm md:text-xl" to="/">奧 Oliver Öquist</Link>
+      <div className="container mx-auto px-10 md:px-32 lg:px-64">
+        <div className="" />
+        <div className="flex items-center justify-between h-16">
+          <Link className="flex text-white text-xl" to="/">奧 Oliver Öquist</Link>
           {/* nav */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
@@ -70,7 +70,7 @@ function Navbar() {
             </div>
           ) : null}
         </div>
-        <div className="lg:col-span-1" />
+        <div className="" />
       </div>
     </div>
   );
