@@ -32,7 +32,7 @@ function Navbar() {
 
   return (
     <div className="bg-black text-white">
-      <div className="container mx-auto px-10 md:px-32 lg:px-64">
+      <div className="container mx-auto px-10 md:px-32 xl:px-64">
         <div className="" />
         <div className="flex items-center justify-between h-16">
           <Link className="flex text-white text-xl" to="/">奧 Oliver Öquist</Link>
@@ -40,7 +40,7 @@ function Navbar() {
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
               {routes.map((path) => (
-                <Link className=" rounded-md font-medium text-md" key={path.path} to={path.path}>{path.title}</Link>
+                <Link className="rounded-md font-medium text-md hover:underline decoration-8 decoration-orange-500" key={path.path} to={path.path}>{path.title}</Link>
               ))}
             </div>
           </div>
