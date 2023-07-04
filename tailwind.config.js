@@ -12,6 +12,10 @@ module.exports = {
       sm: '640px',
     },
     colors: {
+      cactus: '#3ec582',
+      flame: '#CF5C36',
+      svart: '#121212',
+      vistablue: '#9BA2FF',
       transparent: 'transparent',
       current: 'currentColor',
       black: '#2c3333',
