@@ -1,9 +1,9 @@
 import React from 'react';
-import Oliver from '../ostrontwitchtransparentcopy.png';
+import Oliver from '../ostrontransparentless.png';
 
 function Home() {
   return (
-    <div className="container flex-col justify-center items-center mx-auto">
+    <div className="container flex-col justify-center items-center mx-auto flex-grow">
       <div className="lg: pl-4 md:flex items-center md:px-32 xl:px-64">
         <div className="">
           <h2 className="text-md font-bold text-cactus">{'Hello there cyber traveler'}</h2>

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-// import { BsGithub } from 'react-icons/bs';
 import { FaHamburger, FaTimes } from 'react-icons/fa';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHippo } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 
 function Navbar() {
@@ -35,12 +36,12 @@ function Navbar() {
       <div className="container mx-auto px-10 md:px-32 xl:px-64">
         <div className="" />
         <div className="flex items-center justify-between h-16">
-          <Link className="flex text-white text-xl hover:text-cactus" to="/">奧 Oliver Öquist</Link>
+          <Link className="flex text-white text-xl hover:text-cactus" to="/"><FontAwesomeIcon icon={faHippo} /></Link>
           {/* nav */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
               {routes.map((path) => (
-                <Link className="rounded-md font-medium text-md hover:underline decoration-8 decoration-cactus" key={path.path} to={path.path}>{path.title}</Link>
+                <Link className="rounded-md font-medium text-md hover:underline decoration-4 decoration-cactus" key={path.path} to={path.path}>{path.title}</Link>
               ))}
             </div>
           </div>
