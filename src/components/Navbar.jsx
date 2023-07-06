@@ -35,7 +35,7 @@ function Navbar() {
       <div className="container mx-auto px-10 md:px-32 xl:px-64">
         <div className="" />
         <div className="flex items-center justify-between h-16">
-          <Link className="flex text-white text-xl" to="/">奧 Oliver Öquist</Link>
+          <Link className="flex text-white text-xl hover:text-cactus" to="/">奧 Oliver Öquist</Link>
           {/* nav */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
