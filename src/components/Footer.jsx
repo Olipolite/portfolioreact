@@ -7,7 +7,7 @@ function Footer() {
     <div className="flex bg-gray-950 justify-center">
       <div className="text-white text-xs flex flex-row">
         <FontAwesomeIcon icon={faHippo} />
-        <p>Copyright © Olipolite 2023, All rights reserved</p>
+        <p className="px-10">Copyright © Olipolite 2023, All rights reserved</p>
       </div>
     </div>
   );
