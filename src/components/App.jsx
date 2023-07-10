@@ -15,8 +15,8 @@ function App() {
         <Navbar />
         <Home />
         <About />
-        <Contact />
         <Project />
+        <Contact />
         <Footer />
       </PageContainer>
     </div>

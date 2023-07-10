@@ -3,9 +3,9 @@ import Oliver from '../ostrontransparentless.png';
 
 function Home() {
   return (
-    <div className="container flex-col justify-center items-center mx-auto flex-grow min-h-screen pt-20">
-      <div className="sm:px-4 lg:flex items-center md:px-32 lg:px-40 xl:px-64">
-        <div className="sm:mx-5">
+    <div className="container mx-auto flex-grow min-h-screen pt-20">
+      <div id="/" className="flex flex-col justify-center lg:flex-row lg:items-center sm:px-4 md:px-32 lg:px-40 xl:px-64">
+        <div className="text-center sm:text-left sm:mx-5">
           <h2 className="text-md font-bold text-cactus">{'HELLO THERE STRANGER,'}</h2>
           <h1 className="text-5xl font-bold text-white pb-4">{"I'M OLIVER"}</h1>
           <p className="text-gray-300 lg:w-full md:w-full sm:w-2/3">
