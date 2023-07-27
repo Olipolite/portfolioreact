@@ -1,5 +1,5 @@
 import React from 'react';
-import Oliver from '../ostrontransparentless.png';
+import Oliver from '../images/ostrontransparentless.png';
 
 function Home() {
   return (

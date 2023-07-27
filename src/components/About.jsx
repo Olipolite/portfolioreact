@@ -1,5 +1,5 @@
 import React from 'react';
-import Oli from '../IMG_3544.JPG';
+import Oli from '../images/IMG_3544.JPG';
 
 function About() {
   return (
