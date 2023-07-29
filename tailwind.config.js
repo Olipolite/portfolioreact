@@ -8,9 +8,6 @@ module.exports = {
   ],
   mode: 'jit',
   theme: {
-    screeens: {
-      sm: '640px',
-    },
     colors: {
       cactus: '#3ec582',
       flame: '#CF5C36',
@@ -27,7 +24,18 @@ module.exports = {
       white: colors.white,
       orange: colors.orange,
     },
-    extend: {},
+    extend: {
+      container: {
+        screens: {
+          none: '100%',
+          sm: '640px',
+          md: '768px',
+          lg: '1024px',
+          xl: '1280px',
+          xl2: '1300px',
+        },
+      },
+    },
   },
   plugins: [],
 };
