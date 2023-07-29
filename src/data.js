@@ -2,23 +2,23 @@
 
 export const cardData = [
   {
-    title: 'Title-1',
-    description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede.',
-    link: '',
+    title: 'Weather-app',
+    description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam malesuada erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede.',
+    link: 'https://github.com/Olipolite/weather-app',
   },
   {
-    title: 'Title-2',
-    description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede.',
-    link: '',
+    title: 'Tic-tac-toe/Connect4',
+    description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.',
+    link: 'https://github.com/Olipolite/tic-tac-toe',
   },
   {
-    title: 'Title-3',
+    title: 'NASA-Search',
     description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede.',
-    link: '',
+    link: 'https://github.com/Olipolite/React-NASA-search',
   },
   {
-    title: 'Title-4',
+    title: 'Music-Library',
     description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede.',
-    link: '',
+    link: 'https://github.com/Olipolite/music-library',
   },
 ];
