@@ -8,7 +8,7 @@ function Home() {
         <div className="text-center sm:text-left sm:mx-5">
           <h2 className="text-md font-bold text-cactus">{'HELLO THERE STRANGER,'}</h2>
           <h1 className="text-5xl font-bold text-white pb-4">{"I'M OLIVER"}</h1>
-          <p className="text-gray-300 lg:w-full md:w-full sm:w-2/3">
+          <p className="text-gray-300 px-1 md:px-0 lg:w-full md:w-full sm:w-2/3">
             {'A Swedish, Leeds based Software Developer who loves anything that has to do with computers and drinks way too much pepsi max.'}
           </p>
         </div>

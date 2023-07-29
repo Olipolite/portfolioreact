@@ -16,7 +16,7 @@ function Navbar() {
     },
     {
       path: 'project',
-      title: 'Project',
+      title: 'Projects',
     },
     {
       path: 'contact',
