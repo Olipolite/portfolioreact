@@ -3,7 +3,7 @@
 export const cardData = [
   {
     title: 'Weather-app',
-    description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam malesuada erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede.',
+    description: 'Weather app with a simple and easy-to-use interface',
     link: 'https://github.com/Olipolite/weather-app',
   },
   {

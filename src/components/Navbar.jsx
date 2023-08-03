@@ -36,7 +36,7 @@ function Navbar() {
 
   return (
     <div className="bg-svart text-white">
-      <div className="container mx-auto px-10 md:px-32 xl:px-64">
+      <div className="container mx-auto px-10">
         <div className="" />
         <div className="flex items-center justify-between h-16">
           <Link
@@ -49,7 +49,7 @@ function Navbar() {
             <FontAwesomeIcon icon={faHippo} />
           </Link>
           {/* nav */}
-          <div className="hidden lg:block">
+          <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
               {routes.map((route) => (
                 <Link
@@ -65,7 +65,7 @@ function Navbar() {
             </div>
           </div>
           {/* hamburger button */}
-          <div className="m-4 lg:hidden">
+          <div className="m-4 md:hidden">
             <button
               type="button"
               onClick={handleMenu}

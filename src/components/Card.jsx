@@ -4,14 +4,13 @@ import Proptypes from 'prop-types';
 
 function Card(props) {
   return (
-    <div className="container border-2 rounded-xl overflow-hidden border-gray-40 mx-0 p-0">
-      <a className="inline-block" href={props.link}>
+    <div className="container bg-asphalt rounded-md overflow-hidden mx-0 p-0">
+      <a href={props.link}>
         <div className="my-5 py-5">
-          <div className="flex items-center mx-8">
-            <img className="mx-5" src={props.image} alt="project" />
+          <div className="mx-8">
             <h2 className="text-xl text-white">{props.title}</h2>
           </div>
-          <p className="mx-14 text-gray-300">{props.description}</p>
+          <p className="mx-4 text-xs text-gray-300">{props.description}</p>
         </div>
       </a>
     </div>
@@ -21,7 +20,6 @@ function Card(props) {
 export default Card;
 
 Card.propTypes = {
-  image: Proptypes.string.isRequired,
   title: Proptypes.string.isRequired,
   description: Proptypes.string.isRequired,
   link: Proptypes.string.isRequired,
