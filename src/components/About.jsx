@@ -10,7 +10,7 @@ function About() {
           <p className="text-cactus text-[12px] pt-10 lg:pt-0">WHO IS THIS GUY?</p>
           <h3 className="text-3xl text-white pb-4">OLIVER ÖQUIST</h3>
           <div>
-            <p className="text-sm text-left text-gray-300 whitespace-pre-line">
+            <p className="text-sm lg:pr-5 text-left text-gray-300 whitespace-pre-line">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Non velit nesciunt molestiae voluptates, iure cupiditate,
               molestias doloremque vel consequuntur

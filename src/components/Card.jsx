@@ -4,13 +4,16 @@ import Proptypes from 'prop-types';
 
 function Card(props) {
   return (
-    <div className="container bg-asphalt rounded-md overflow-hidden mx-0 p-0">
+    <div className="container flex bg-asphalt rounded-md overflow-hidden  m-2 p-2">
       <a href={props.link}>
-        <div className="my-5 py-5">
-          <div className="mx-8">
-            <h2 className="text-xl text-white">{props.title}</h2>
+        <div className="">
+          <div className="flex justify-start">
+            <h2 className="text-lg text-white">{props.title}</h2>
           </div>
-          <p className="mx-4 text-xs text-gray-300">{props.description}</p>
+          <p className="ml-2 mr-4 my-5 text-xs text-gray-300">{props.description}</p>
+          <div>
+            <span className="text-xs">{props.tech}</span>
+          </div>
         </div>
       </a>
     </div>
@@ -23,4 +26,5 @@ Card.propTypes = {
   title: Proptypes.string.isRequired,
   description: Proptypes.string.isRequired,
   link: Proptypes.string.isRequired,
+  tech: Proptypes.string.isRequired,
 };

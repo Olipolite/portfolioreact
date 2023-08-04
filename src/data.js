@@ -5,20 +5,24 @@ export const cardData = [
     title: 'Weather-app',
     description: 'Weather app with a simple and easy-to-use interface',
     link: 'https://github.com/Olipolite/weather-app',
+    tech: 'React.js Axios',
   },
   {
     title: 'Tic-tac-toe/Connect4',
-    description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis.',
+    description: 'Multiplayer game with a mix of Tic-Tac-Toe and Connect4',
     link: 'https://github.com/Olipolite/tic-tac-toe',
+    tech: '',
   },
   {
     title: 'NASA-Search',
-    description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede.',
+    description: 'A search engine with NASA API endpoint',
     link: 'https://github.com/Olipolite/React-NASA-search',
+    tech: '',
   },
   {
     title: 'Music-Library',
-    description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede.',
+    description: 'Back-end Music library API',
     link: 'https://github.com/Olipolite/music-library',
+    tech: '',
   },
 ];
