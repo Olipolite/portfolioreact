@@ -6,7 +6,7 @@ import { cardData } from '../data';
 
 function Project() {
   return (
-    <div className="container min-h-screen pt-32 mx-auto px-4 sm:px-4 lg:px-20">
+    <div className="container min-h-screen pt-32 mx-auto px-4 sm:px-4 lg:px-15">
       <div id="project" className="flex flex-col items-center justify-center text-sm text-cactus">
         SOME FUN STUFF HERE
         <p className="text-3xl text-white">

@@ -4,15 +4,15 @@ import Proptypes from 'prop-types';
 
 function Card(props) {
   return (
-    <div className="container flex bg-asphalt rounded-md overflow-hidden  m-2 p-2">
-      <a href={props.link}>
+    <div className="container flex bg-asphalt rounded-md m-2 p-2">
+      <a className="w-full" href={props.link}>
         <div className="">
           <div className="flex justify-start">
-            <h2 className="text-lg text-white">{props.title}</h2>
+            <h2 className="text-md ml-2 mr-4 text-white">{props.title}</h2>
           </div>
-          <p className="ml-2 mr-4 my-5 text-xs text-gray-300">{props.description}</p>
-          <div>
-            <span className="text-xs">{props.tech}</span>
+          <p className="ml-2 mr-4 my-10 text-xs text-gray-300">{props.description}</p>
+          <div className="text-xs ml-2 mr-2 pt-4 pb-2 border-t-[1px] block">
+            <span className="border-t-cactus">{props.tech}</span>
           </div>
         </div>
       </a>
