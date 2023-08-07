@@ -4,8 +4,8 @@ import Proptypes from 'prop-types';
 
 function Card(props) {
   return (
-    <div className="container flex bg-asphalt rounded-md m-2 p-2">
-      <a className="w-full" href={props.link}>
+    <div className="container flex bg-asphalt rounded-md m-2 p-2 hover:scale-105 duration-300 transition-transform">
+      <a className="w-full " href={props.link}>
         <div className="">
           <div className="flex justify-start">
             <h2 className="text-md ml-2 mr-4 text-white">{props.title}</h2>
