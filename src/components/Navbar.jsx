@@ -53,13 +53,13 @@ function Navbar() {
             <div className="ml-10 flex items-baseline space-x-4">
               {routes.map((route) => (
                 <Link
-                  className="rounded-md cursor-pointer font-medium text-md hover:underline decoration-4 decoration-cactus"
-                  key={route.path}
+                  className="rounded-md cursor-pointer font-medium text-md relative group"
                   to={route.path}
                   smooth
                   duration={500}
                 >
                   {route.title}
+                  <span className="absolute left-0 right-0 w-0 h-1 bg-cactus bottom-0 group-hover:w-full transition-all duration-300 ease-in-out group-hover:animate-underline-grow" />
                 </Link>
               ))}
             </div>
