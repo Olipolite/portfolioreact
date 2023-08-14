@@ -5,7 +5,7 @@ function About() {
   return (
     <div id="about" className="container mx-auto flex-grow min-h-screen pt-5 sm:pt-20">
       <div className="flex flex-col items-center text-center sm:text-left sm:px-4 lg:flex-row lg:items-start">
-        <img src={Oli} alt="oliver" className="w-72 h-auto lg:h-[400px] lg:w-[620px]" />
+        <img src={Oli} alt="oliver" className="w-72 h-auto lg:h-[400px] lg:w-[620px] rounded-lg" />
         <article className="px-5">
           <p className="text-cactus text-[12px] pt-10 lg:pt-0">WHO IS THIS GUY?</p>
           <h2 className="text-3xl text-white pb-4">OLIVER ÖQUIST</h2>
