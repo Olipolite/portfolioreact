@@ -3,7 +3,7 @@ import Oli from '../images/IMG_3544.JPG';
 
 function About() {
   return (
-    <div id="about" className="container mx-auto flex-grow min-h-screen pt-20">
+    <div id="about" className="container mx-auto flex-grow min-h-screen pt-5 sm:pt-20">
       <div className="flex flex-col items-center text-center sm:text-left sm:px-4 lg:flex-row lg:items-start">
         <img src={Oli} alt="oliver" className="w-72 h-auto lg:h-[400px] lg:w-[620px]" />
         <article className="px-5">

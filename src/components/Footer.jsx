@@ -2,22 +2,26 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHippo } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import MiniNavbar from './MiniNavbar';
 
 function Footer() {
   return (
-    <div className="h-[10rem] flex-row justify-center items-center bg-gray-950 pt-2">
-      <div className="flex justify-center text-white">
+    <div className="h-[10rem] flex flex-col justify-center items-center mt-10">
+      <div className="container mx-auto flex justify-center text-white">
         <a href="https://github.com/Olipolite">
-          <FontAwesomeIcon className="mr-4" icon={faGithub} />
+          <FontAwesomeIcon className="mx-4 sm:mx-2" icon={faGithub} />
         </a>
         <a href="https://www.linkedin.com/in/oliveroquist/">
-          <FontAwesomeIcon className="mr-4" icon={faLinkedin} />
+          <FontAwesomeIcon className="mx-4 sm:mx-2" icon={faLinkedin} />
         </a>
-        <FontAwesomeIcon className="mr-4 mt-[3px]" icon={faHippo} />
+        <FontAwesomeIcon className="mx-4 sm:mx-2 mt-[3px]" icon={faHippo} />
       </div>
-      <div className="flex justify-center text-white text-xs mt-5">
+      <div className="flex justify-center items-center text-white text-xs mt-5 sm:mt-2">
+        <MiniNavbar />
+      </div>
+      <div className="flex justify-center items-center text-white text-xs mt-5 sm:mt-2">
         <FontAwesomeIcon icon={faHippo} />
-        <p className="px-5">Copyright © Olipolite 2023, All rights reserved</p>
+        <p className="px-2">© 2023 • Oliver Öquist</p>
       </div>
     </div>
   );

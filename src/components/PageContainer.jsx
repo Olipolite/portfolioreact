@@ -6,7 +6,8 @@ function PageContainer({ children }) {
 }
 
 PageContainer.propTypes = {
-  children: Proptypes.string.isRequired,
+  // eslint-disable-next-line react/forbid-prop-types
+  children: Proptypes.array.isRequired,
 };
 
 export default PageContainer;

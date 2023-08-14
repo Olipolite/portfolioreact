@@ -7,18 +7,22 @@ import { Link } from 'react-scroll';
 function Navbar() {
   const routes = [
     {
-      path: 'home',
+      id: 0,
+      path: '/',
       title: 'Home',
     },
     {
+      id: 1,
       path: 'about',
       title: 'About',
     },
     {
+      id: 2,
       path: 'project',
       title: 'Projects',
     },
     {
+      id: 3,
       path: 'contact',
       title: 'Contact',
     },
@@ -40,11 +44,12 @@ function Navbar() {
         <div className="" />
         <div className="flex items-center justify-between h-16">
           <Link
-            className="flex text-white text-xl hover:text-cactus"
-            key={routes.home}
-            to={routes.home}
+            className="flex text-white text-xl cursor-pointer duration-300 hover:text-cactus"
+            key={routes.id}
+            to={routes[0].path}
             smooth
             duration={500}
+            offset={-150}
           >
             <FontAwesomeIcon icon={faHippo} />
           </Link>
@@ -53,13 +58,14 @@ function Navbar() {
             <div className="ml-10 flex items-baseline space-x-4">
               {routes.map((route) => (
                 <Link
+                  key={route.id}
                   className="rounded-md cursor-pointer font-medium text-md relative group"
                   to={route.path}
                   smooth
                   duration={500}
                 >
                   {route.title}
-                  <span className="absolute left-0 right-0 w-0 h-1 bg-cactus bottom-0 group-hover:w-full transition-all duration-300 ease-in-out group-hover:animate-underline-grow" />
+                  <span className="absolute left-0 right-0 w-0 h-1 bg-bittersweet bottom-0 group-hover:w-full transition-all duration-300 ease-in-out group-hover:animate-underline-grow" />
                 </Link>
               ))}
             </div>
@@ -103,7 +109,6 @@ function Navbar() {
             </div>
           )}
         </div>
-        <div className="" />
       </div>
     </div>
   );

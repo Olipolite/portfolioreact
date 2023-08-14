@@ -10,7 +10,7 @@ import PageContainer from './PageContainer';
 
 function App() {
   return (
-    <div className="bg-svart">
+    <div>
       <PageContainer>
         <Navbar />
         <Home />
