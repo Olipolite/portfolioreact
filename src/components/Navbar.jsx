@@ -1,31 +1,16 @@
+/* eslint-disable object-curly-newline */
 import React, { useState } from 'react';
-import { FaHamburger, FaTimes } from 'react-icons/fa';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHippo } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-scroll';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FaHamburger, FaTimes } from 'react-icons/fa';
+import { faHippo } from '@fortawesome/free-solid-svg-icons';
 
 function Navbar() {
   const routes = [
-    {
-      id: 0,
-      path: '/',
-      title: 'Home',
-    },
-    {
-      id: 1,
-      path: 'about',
-      title: 'About',
-    },
-    {
-      id: 2,
-      path: 'project',
-      title: 'Projects',
-    },
-    {
-      id: 3,
-      path: 'contact',
-      title: 'Contact',
-    },
+    { id: 0, path: '/', title: 'Home', offset: -150 },
+    { id: 1, path: 'about', title: 'About', offset: 0 },
+    { id: 2, path: 'project', title: 'Projects', offset: 0 },
+    { id: 3, path: 'contact', title: 'Contact', offset: 0 },
   ];
 
   const [open, setOpen] = useState(false);
@@ -41,7 +26,6 @@ function Navbar() {
   return (
     <div className="bg-svart text-white">
       <div className="container mx-auto px-10">
-        <div className="" />
         <div className="flex items-center justify-between h-16">
           <Link
             className="flex text-white text-xl cursor-pointer duration-300 hover:text-cactus"
@@ -79,9 +63,9 @@ function Navbar() {
             >
               <span className="sr-only">Open Main Menu</span>
               {open ? (
-                <FaTimes className="pointer-events-none z-10" onClick={handleMenu} />
+                <FaTimes className="cursor-pointer z-10" />
               ) : (
-                <FaHamburger className="pointer-events-none text-3xl" onClick={handleMenu} />
+                <FaHamburger className="pointer-events-none text-3xl" />
               )}
             </button>
           </div>
@@ -90,20 +74,17 @@ function Navbar() {
             <div className="lg:hidden fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
               <div className="flex flex-col space-y-4">
                 {routes.map((route) => (
-                  <button
-                    type="button"
+                  <Link
                     key={route.path}
-                    onClick={() => {
-                      closeMenu();
-                      const element = document.getElementById(route.path);
-                      if (element) {
-                        element.scrollIntoView({ behavior: 'smooth' });
-                      }
-                    }}
-                    className="text-gray-300 flex px-3 py-2 rounded-md text-base font-medium"
+                    to={route.path}
+                    smooth
+                    duration={500}
+                    offset={route.offset}
+                    onClick={closeMenu}
+                    className="text-gray-300 flex px-3 py-2 rounded-md text-base font-medium cursor-pointer"
                   >
                     {route.title}
-                  </button>
+                  </Link>
                 ))}
               </div>
             </div>
