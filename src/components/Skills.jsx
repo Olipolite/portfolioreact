@@ -7,10 +7,28 @@ function Skills() {
       <p className="text-white text-3xl">
         {'SKILLS'}
       </p>
-      <div className="text-white">
-        <div>1.Language</div>
-        <div>2.Framworks</div>
-        <div>3.Tools</div>
+      <div className="grid grid-cols-3 gap-8">
+        <div className="bg-green">
+          <h3 className="text-white">1. Language</h3>
+          <ul className="text-white">
+            <li>-Javascript</li>
+            <li>-PostgreSQL</li>
+          </ul>
+        </div>
+        <div className="bg-green">
+          <h3 className="text-white">2. Frameworks</h3>
+          <ul className="text-white">
+            <li>-React.js</li>
+            <li>-Express</li>
+          </ul>
+        </div>
+        <div className="bg-green">
+          <h3 className="text-white">3. Tools</h3>
+          <ul className="text-white">
+            <li>-Docker</li>
+            <li>-Jest</li>
+          </ul>
+        </div>
       </div>
     </div>
   );
