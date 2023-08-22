@@ -39,7 +39,7 @@ function Navbar() {
           </Link>
           {/* nav */}
           <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-4">
+            <div className="ml-10 flex items-baseline space-x-6">
               {routes.map((route) => (
                 <Link
                   key={route.id}

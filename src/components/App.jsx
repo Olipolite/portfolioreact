@@ -7,6 +7,7 @@ import Contact from './Contact';
 import Project from './Project';
 import Footer from './Footer';
 import PageContainer from './PageContainer';
+import Skills from './Skills';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Navbar />
         <Home />
         <About />
+        <Skills />
         <Project />
         <Contact />
         <Footer />
