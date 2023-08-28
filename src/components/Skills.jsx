@@ -5,6 +5,13 @@ import html from '../images/html-5.png';
 import css from '../images/css-3.png';
 
 function Skills() {
+  const frontendSkills = [
+    { name: 'Javascript', icon: js },
+    { name: 'React', icon: react },
+    { name: 'HTML', icon: html },
+    { name: 'CSS', icon: css },
+  ];
+
   return (
     <div className="container mx-auto flex flex-col items-center h-[30rem]">
       <h2 className="text-cactus text-[12px]">{"SOME THINGS I'VE LEARNT"}</h2>
@@ -15,22 +22,12 @@ function Skills() {
         <div className="space-y-4">
           <h3 className="text-white flex justify-center">1. Frontend</h3>
           <ul className="text-white text-[12px] space-y-4">
-            <li className="flex items-center space-x-2">
-              <img className="h-8 w-8" src={js} alt="html icon" />
-              <p className="border-b border-cactus border-spacing-0">Javascript</p>
-            </li>
-            <li className="flex items-center space-x-2">
-              <img className="h-8 w-8" src={react} alt="html icon" />
-              <p className="border-b border-cactus border-spacing-0">React</p>
-            </li>
-            <li className="flex items-center space-x-2">
-              <img className="h-8 w-8" src={html} alt="html icon" />
-              <p className="border-b border-cactus border-spacing-0">HTML</p>
-            </li>
-            <li className="flex items-center space-x-2">
-              <img className="h-8 w-8" src={css} alt="html icon" />
-              <p className="border-b border-cactus border-spacing-0">CSS</p>
-            </li>
+            {frontendSkills.map((skills) => (
+              <li className="flex items-center space-x-2">
+                <img className="h-8 w-8" src={skills.icon} alt="html icon" />
+                <p className="border-b border-cactus border-spacing-0">{skills.name}</p>
+              </li>
+            ))}
           </ul>
         </div>
         <div className="bg-green">
