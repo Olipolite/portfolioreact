@@ -3,6 +3,12 @@ import js from '../images/js.png';
 import react from '../images/react.png';
 import html from '../images/html-5.png';
 import css from '../images/css-3.png';
+import docker from '../images/docker.png';
+import postman from '../images/postman.png';
+import jest from '../images/jest.png';
+import git from '../images/git.png';
+import postgre from '../images/postgre.png';
+import express from '../images/express.png';
 
 function Skills() {
   const frontendSkills = [
@@ -10,6 +16,19 @@ function Skills() {
     { name: 'React', icon: react },
     { name: 'HTML', icon: html },
     { name: 'CSS', icon: css },
+  ];
+
+  const backendSkills = [
+    { name: 'PostgreSQL', icon: postgre },
+    { name: 'Axios', icon: postgre },
+    { name: 'Express', icon: express },
+  ];
+
+  const tools = [
+    { name: 'Docker', icon: docker },
+    { name: 'Jest', icon: jest },
+    { name: 'Git', icon: git },
+    { name: 'Postman', icon: postman },
   ];
 
   return (
@@ -30,21 +49,26 @@ function Skills() {
             ))}
           </ul>
         </div>
-        <div className="bg-green">
+        <div className="space-y-4">
           <h3 className="text-white">2. Backend</h3>
           <ul className="text-white text-[12px] space-y-4">
-            <li>PostgreSQL</li>
-            <li>Axios</li>
-            <li>Express</li>
+            {backendSkills.map((skills) => (
+              <li className="flex items-center space-x-2">
+                <img className="h-8 w-8" src={skills.icon} alt="html icon" />
+                <p className="border-b border-cactus border-spacing-0">{skills.name}</p>
+              </li>
+            ))}
           </ul>
         </div>
-        <div className="bg-green">
-          <h3 className="text-white">3. Tools</h3>
+        <div className="space-y-4">
+          <h3 className="text-white flex justify-center">3. Tools</h3>
           <ul className="text-white text-[12px] space-y-4">
-            <li>Docker</li>
-            <li>Jest</li>
-            <li>GitHub</li>
-            <li>Postman</li>
+            {tools.map((skills) => (
+              <li className="flex items-center space-x-2">
+                <img className="h-8 w-8" src={skills.icon} alt="html icon" />
+                <p className="border-b border-cactus border-spacing-0">{skills.name}</p>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
