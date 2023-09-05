@@ -1,6 +1,7 @@
 /* eslint-disable object-curly-newline */
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
+import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { FaHamburger, FaTimes } from 'react-icons/fa';
 import { faHippo } from '@fortawesome/free-solid-svg-icons';
@@ -35,7 +36,12 @@ function Navbar() {
             duration={500}
             offset={-150}
           >
-            <FontAwesomeIcon icon={faHippo} />
+            <motion.div
+              animate={{ rotate: [0, 360, 0] }}
+              transition={{ repeat: Infinity, duration: 5 }}
+            >
+              <FontAwesomeIcon icon={faHippo} />
+            </motion.div>
           </Link>
           {/* nav */}
           <div className="hidden md:block">

@@ -1,6 +1,7 @@
 /* eslint-disable react/no-array-index-key */
 /* eslint-disable react/jsx-props-no-spreading */
 import React from 'react';
+import { motion } from 'framer-motion';
 import Card from './Card';
 import { cardData } from '../data';
 
@@ -13,13 +14,15 @@ function Project() {
           PROJECTS
         </p>
       </div>
-      <div className="grid gap-4 justify-center items-center mt-5 sm:mt-10 md:grid-cols-2 lg:grid-cols-2 text-gray-300">
-        {cardData.map((card, index) => (
-          <div key={index} className="flex items-center justify-center rounded-xl">
-            <Card {...card} />
-          </div>
-        ))}
-      </div>
+      <motion.div animate={{ scale: 1 }} initial={{ scale: 0 }}>
+        <div className="grid gap-4 justify-center items-center mt-5 sm:mt-10 md:grid-cols-2 lg:grid-cols-2 text-gray-300">
+          {cardData.map((card, index) => (
+            <div key={index} className="flex items-center justify-center rounded-xl">
+              <Card {...card} />
+            </div>
+          ))}
+        </div>
+      </motion.div>
     </div>
   );
 }
