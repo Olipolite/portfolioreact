@@ -11,13 +11,19 @@ function About() {
           <h2 className="text-3xl text-white pb-4">OLIVER ÖQUIST</h2>
           <div>
             <p className="text-sm lg:pr-5 text-left text-gray-300 whitespace-pre-line">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Non velit nesciunt molestiae voluptates, iure cupiditate,
-              molestias doloremque vel consequuntur
-              accusantium veritatis sint. Iure, nobis alias.
+              Yoo 👋
+              {'\n'}
+              I started my Software Development Journey in the beginning of 2022.
+              I was on youtube looking up coding tutorials for Python.
+              I did the Programming with Mosh
+              Python tutorial and was instantly hooked. After making my own very small scripts that
+              make my life easier such as
+              organizing invoices or my own wage for the month.
+              I decided I wanted to take my hobby to the next level, bootcamp.
               {'\n'}
               {'\n'}
-              Vad vill du mig?
+              September 2022 I enrolled in CommandShift intensive 6-month Fullstack-Software
+              Development bootcamp.
               {'\n'}
               {'\n'}
               perferendis quas fuga quia expedita qui.
@@ -27,13 +33,6 @@ function About() {
               {'\n'}
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Laborum dolores, commodi nobis vero necessitatibus
-              {'\n'}
-              {'\n'}
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Laborum dolores, commodi nobis vero necessitatibus
-              perferendis quas fuga quia expedita qui.
-              Mollitia, voluptatum perferendis.
-              Doloribus, libero illo veritatis nemo beatae necessitatibus.
             </p>
           </div>
         </article>
