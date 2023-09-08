@@ -39,4 +39,12 @@ export const cardData = [
     tech2: 'PostgreSQL',
     tech3: 'Javascript',
   },
+  {
+    title: 'React-Portfolio',
+    description: 'This very website you are looking at',
+    link: 'https://github.com/Olipolite/portfolioreact',
+    tech: 'React.js',
+    tech1: 'Tailwind.css',
+    tech2: 'Framer-motion',
+  },
 ];
