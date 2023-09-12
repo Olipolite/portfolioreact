@@ -33,7 +33,7 @@ function Skills() {
   ];
 
   return (
-    <div className="container mx-auto flex flex-col items-center h-[30rem]">
+    <div className="container mx-auto flex flex-col items-center h-[30rem] mt-20 md:mt-0">
       <h2 className="text-cactus text-[12px]">{"SOME THINGS I'VE LEARNT"}</h2>
       <p className="text-white text-3xl">
         {'SKILLS'}

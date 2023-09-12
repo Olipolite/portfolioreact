@@ -14,23 +14,26 @@ function Project() {
           PROJECTS
         </p>
       </div>
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        transition={{
-          type: 'spring', stiffness: 300, damping: 24, duration: 2,
-        }}
-        variants={{ visible: { opacity: 1, scale: 1, x: [-300, 0] }, hidden: { opacity: 0, scale: 0 } }}
-      >
-        <div className="grid gap-4 justify-center items-center mt-5 sm:mt-10 md:grid-cols-2 lg:grid-cols-2 text-gray-300">
-          {cardData.map((card, index) => (
-            <div key={index} className="flex items-center justify-center rounded-xl">
-              <Card {...card} />
-            </div>
-          ))}
-        </div>
-      </motion.div>
+      <div className="grid gap-4 justify-center items-center mt-5 sm:mt-10 md:grid-cols-2 lg:grid-cols-2 text-gray-300">
+        {cardData.map((card, index) => (
+          <div>
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{
+                duration: 1.5,
+              }}
+              variants={{
+                visible: { opacity: 1, scale: 1, x: index % 2 === 0 ? [-250, 0] : [250, 0] },
+                hidden: { opacity: 0, scale: 0 },
+              }}
+            >
+              <Card className="flex items-center justify-center rounded-xl" {...card} />
+            </motion.div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
