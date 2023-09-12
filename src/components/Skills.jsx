@@ -9,6 +9,7 @@ import jest from '../images/jest.png';
 import git from '../images/git.png';
 import postgre from '../images/postgre.png';
 import express from '../images/express.png';
+import axios from '../images/Axios.png';
 
 function Skills() {
   const frontendSkills = [
@@ -20,7 +21,7 @@ function Skills() {
 
   const backendSkills = [
     { name: 'PostgreSQL', icon: postgre },
-    { name: 'Axios', icon: postgre },
+    { name: 'Axios', icon: axios },
     { name: 'Express', icon: express },
   ];
 

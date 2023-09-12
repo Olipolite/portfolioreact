@@ -9,6 +9,7 @@ module.exports = {
   mode: 'jit',
   theme: {
     colors: {
+      princeton: '#FF9616',
       bittersweet: '#F87060',
       cactus: '#3ec582',
       asphalt: '#121212',

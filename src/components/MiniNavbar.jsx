@@ -3,27 +3,11 @@ import { Link } from 'react-scroll';
 
 function MiniNavbar() {
   const routes = [
-    {
-      id: 0,
-      path: '/',
-      title: 'home',
-      offset: -150,
-    },
-    {
-      id: 1,
-      path: 'about',
-      title: 'about',
-    },
-    {
-      id: 2,
-      path: 'project',
-      title: 'projects',
-    },
-    {
-      id: 3,
-      path: 'contact',
-      title: 'contact',
-    },
+    // eslint-disable-next-line object-curly-newline
+    { id: 0, path: '/', title: 'home', offset: -150 },
+    { id: 1, path: 'about', title: 'about' },
+    { id: 2, path: 'project', title: 'projects' },
+    { id: 3, path: 'contact', title: 'contact' },
   ];
 
   return (

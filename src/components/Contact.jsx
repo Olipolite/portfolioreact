@@ -9,7 +9,7 @@ function Contact() {
       <a href="mailto:oliveroquist3d@gmail.com">
         <button className="border-2 duration-300 hover:border-cactus rounded-md text-white text-[12px] px-2 py-1 my-10 hover:text-cactus " type="button">
           <FontAwesomeIcon className="mr-2 text-white" icon={faEnvelope} />
-          {"Let's get in touch"}
+          Let's get in touch
         </button>
       </a>
     </div>

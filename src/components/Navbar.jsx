@@ -55,7 +55,7 @@ function Navbar() {
                   duration={500}
                 >
                   {route.title}
-                  <span className="absolute left-0 right-0 w-0 h-1 bg-bittersweet bottom-0 group-hover:w-full transition-all duration-300 ease-in-out group-hover:animate-underline-grow" />
+                  <span className="absolute left-0 right-0 w-0 h-1 bg-princeton bottom-0 group-hover:w-full transition-all duration-300 ease-in-out group-hover:animate-underline-grow" />
                 </Link>
               ))}
             </div>
