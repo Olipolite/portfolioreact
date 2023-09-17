@@ -13,7 +13,7 @@ function About() {
             <div className="text-sm lg:pr-5 text-left text-gray-300 whitespace-pre-line">
               Yoo 👋
               {'\n'}
-              I started my Software Development Journey in the beginning of 2022.
+              I started my Software Development journey in the beginning of 2022.
               I was on youtube looking up coding tutorials for Python.
               I did the Programming with
               {' '}

@@ -4,7 +4,7 @@ import { Link } from 'react-scroll';
 function MiniNavbar() {
   const routes = [
     // eslint-disable-next-line object-curly-newline
-    { id: 0, path: '/', title: 'home', offset: -150 },
+    { id: 0, path: 'skills', title: 'skills', offset: -100 },
     { id: 1, path: 'about', title: 'about' },
     { id: 2, path: 'project', title: 'projects' },
     { id: 3, path: 'contact', title: 'contact' },

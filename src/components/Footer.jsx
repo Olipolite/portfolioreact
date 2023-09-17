@@ -10,10 +10,10 @@ function Footer() {
     <div className="h-[10rem] flex flex-col justify-center items-center mt-10">
       <div className="container mx-auto flex justify-center text-white">
         <a href="https://github.com/Olipolite">
-          <FontAwesomeIcon className="mx-4 sm:mx-2" icon={faGithub} />
+          <FontAwesomeIcon className="mx-4 sm:mx-2 hover:text-cactus" icon={faGithub} />
         </a>
         <a href="https://www.linkedin.com/in/oliveroquist/">
-          <FontAwesomeIcon className="mx-4 sm:mx-2" icon={faLinkedin} />
+          <FontAwesomeIcon className="mx-4 sm:mx-2 hover:text-princeton" icon={faLinkedin} />
         </a>
         <Link
           className="text-white cursor-pointer duration-300 hover:text-cactus"
@@ -28,7 +28,7 @@ function Footer() {
       <div className="flex justify-center items-center text-white text-xs mt-5 sm:mt-2">
         <MiniNavbar />
       </div>
-      <div className="flex justify-center items-center text-white text-xs mt-5 sm:mt-2">
+      <div className="flex justify-center items-center text-white text-xs mt-5 sm:mt-4">
         <p className="px-2">© 2023 • Oliver Öquist</p>
       </div>
     </div>

@@ -11,7 +11,7 @@ import Skills from './Skills';
 
 function App() {
   return (
-    <div>
+    <div className="selection:bg-princeton">
       <PageContainer>
         <Navbar />
         <Home />
