@@ -16,7 +16,7 @@ function Home() {
           <a href="https://github.com/Olipolite" className="text-white text-4xl mr-5 hover:text-cactus duration-500 ease-in-out">
             <FontAwesomeIcon icon={faGithub} />
           </a>
-          <a href="https://www.linkedin.com/in/oliveroquist/" className="text-white text-4xl mr-5  hover:text-cactus duration-500 ease-in-out">
+          <a href="https://www.linkedin.com/in/oliveroquist/" className="text-white text-4xl mr-5  hover:text-princeton duration-500 ease-in-out">
             <FontAwesomeIcon icon={faLinkedin} />
           </a>
         </div>
