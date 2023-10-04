@@ -14,7 +14,7 @@ function About() {
               Yoo 👋
               {'\n'}
               I started my Software Development journey in the beginning of 2022.
-              I was on youtube looking up coding tutorials for Python.
+              I was on Youtube looking up coding tutorials for Python.
               I did the Programming with
               {' '}
               <a className="underline text-princeton" href="https://www.youtube.com/watch?v=_uQrJ0TkZlc&ab_channel=ProgrammingwithMosh">Mosh</a>

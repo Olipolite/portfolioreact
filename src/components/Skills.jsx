@@ -33,14 +33,14 @@ function Skills() {
   ];
 
   return (
-    <div id="skills" className="container mx-auto flex flex-col items-center h-[30rem] mt-20 md:mt-0">
+    <div id="skills" className="container mx-auto flex flex-col items-center h-[30rem] mt-40">
       <h2 className="text-cactus text-[12px]">{"SOME THINGS I'VE LEARNT"}</h2>
       <p className="text-white text-3xl">
         {'SKILLS'}
       </p>
       <div className="grid grid-cols-3 gap-8 md:gap-24 mt-8">
         <div className="space-y-4">
-          <h3 className="text-white flex justify-center">1. Frontend</h3>
+          <h3 className="text-white">1. Frontend</h3>
           <ul className="text-white text-[12px] space-y-4">
             {frontendSkills.map((skills) => (
               <li className="flex items-center space-x-2">
@@ -62,7 +62,7 @@ function Skills() {
           </ul>
         </div>
         <div className="space-y-4">
-          <h3 className="text-white flex justify-center">3. Tools</h3>
+          <h3 className="text-white">3. Tools</h3>
           <ul className="text-white text-[12px] space-y-4">
             {tools.map((skills) => (
               <li className="flex items-center space-x-2">

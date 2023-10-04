@@ -3,9 +3,8 @@ import { Link } from 'react-scroll';
 
 function MiniNavbar() {
   const routes = [
-    // eslint-disable-next-line object-curly-newline
-    { id: 0, path: 'skills', title: 'skills', offset: -100 },
-    { id: 1, path: 'about', title: 'about' },
+    { id: 0, path: 'about', title: 'about' },
+    { id: 1, path: 'skills', title: 'skills', offset: -25 },
     { id: 2, path: 'project', title: 'projects' },
     { id: 3, path: 'contact', title: 'contact' },
   ];
