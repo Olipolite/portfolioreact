@@ -22,11 +22,11 @@ function Project() {
               whileInView="visible"
               viewport={{ once: true }}
               transition={{
-                duration: 1.5,
+                duration: 2,
               }}
               variants={{
-                visible: { opacity: 1, scale: 1, x: index % 2 === 0 ? [-250, 0] : [250, 0] },
-                hidden: { opacity: 0, scale: 0 },
+                visible: { opacity: 1, x: index % 2 === 0 ? [-250, 0] : [250, 0], scale: 1 },
+                hidden: { opacity: 0, scale: 1 },
               }}
             >
               <Card className="flex items-center justify-center rounded-xl" {...card} />

@@ -45,7 +45,7 @@ function Skills() {
             {frontendSkills.map((skills) => (
               <li className="flex items-center space-x-2">
                 <img className="h-8 w-8" src={skills.icon} alt="html icon" />
-                <p className="border-b border-cactus border-spacing-0">{skills.name}</p>
+                <p className="">{skills.name}</p>
               </li>
             ))}
           </ul>
@@ -56,7 +56,7 @@ function Skills() {
             {backendSkills.map((skills) => (
               <li className="flex items-center space-x-2">
                 <img className="h-8 w-8" src={skills.icon} alt="html icon" />
-                <p className="border-b border-cactus border-spacing-0">{skills.name}</p>
+                <p className="">{skills.name}</p>
               </li>
             ))}
           </ul>
@@ -67,7 +67,7 @@ function Skills() {
             {tools.map((skills) => (
               <li className="flex items-center space-x-2">
                 <img className="h-8 w-8" src={skills.icon} alt="html icon" />
-                <p className="border-b border-cactus border-spacing-0">{skills.name}</p>
+                <p className="">{skills.name}</p>
               </li>
             ))}
           </ul>
